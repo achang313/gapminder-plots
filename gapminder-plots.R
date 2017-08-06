@@ -15,3 +15,4 @@ p <- ggplot(gapminder, aes(x = gdpPercap, y = lifeExp)) +
   geom_point()
 ggplotly(p)
 
+# added some random text
