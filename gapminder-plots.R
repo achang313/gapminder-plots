@@ -17,3 +17,7 @@ p <- ggplot(gapminder, aes(x = gdpPercap, y = lifeExp)) +
 ggplotly(p)
 
 # added some random text
+japan_gapminder <- gapminder[gapminder$country == "Japan",]
+ggplot(japan_gapminder, aes(x = year, y = lifeExp)) +
+  geom_line(color ="coral") +
+  ylab("Life expectancy") + xlab("Year")
