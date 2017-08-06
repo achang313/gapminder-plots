@@ -8,7 +8,8 @@ library(ggplot2)
 library(plotly)
 
 ggplot(gapminder, aes(x = gdpPercap, y = lifeExp)) + 
-  geom_point(aes(color = continent))
+  geom_point(aes(color = continent)) +
+  scale_x_log10()
 
 p <- ggplot(gapminder, aes(x = gdpPercap, y = lifeExp)) + 
   geom_point()
